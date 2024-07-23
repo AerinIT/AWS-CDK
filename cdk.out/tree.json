@@ -1,0 +1,113 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": {
+      "Tree": {
+        "id": "Tree",
+        "path": "Tree",
+        "constructInfo": {
+          "fqn": "@aws-cdk/core.Construct",
+          "version": "1.203.0"
+        }
+      },
+      "CloudwatchDashboardStack": {
+        "id": "CloudwatchDashboardStack",
+        "path": "CloudwatchDashboardStack",
+        "children": {
+          "SampleDashboard": {
+            "id": "SampleDashboard",
+            "path": "CloudwatchDashboardStack/SampleDashboard",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "CloudwatchDashboardStack/SampleDashboard/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::CloudWatch::Dashboard",
+                  "aws:cdk:cloudformation:props": {
+                    "dashboardBody": {
+                      "Fn::Join": [
+                        "",
+                        [
+                          "{\"widgets\":[{\"type\":\"metric\",\"width\":6,\"height\":3,\"x\":0,\"y\":0,\"properties\":{\"view\":\"singleValue\",\"title\":\"4XX Errors\",\"region\":\"",
+                          {
+                            "Ref": "AWS::Region"
+                          },
+                          "\",\"metrics\":[[\"AWS/ApiGateway\",\"4XXError\",\"ApiId\",\"7r82euqtv8\"]]}},{\"type\":\"metric\",\"width\":6,\"height\":3,\"x\":6,\"y\":0,\"properties\":{\"view\":\"singleValue\",\"title\":\"5XX Errors\",\"region\":\"",
+                          {
+                            "Ref": "AWS::Region"
+                          },
+                          "\",\"metrics\":[[\"AWS/ApiGateway\",\"5XXError\",\"ApiId\",\"7r82euqtv8\"]]}},{\"type\":\"metric\",\"width\":6,\"height\":3,\"x\":12,\"y\":0,\"properties\":{\"view\":\"singleValue\",\"title\":\"API Count\",\"region\":\"",
+                          {
+                            "Ref": "AWS::Region"
+                          },
+                          "\",\"metrics\":[[\"AWS/ApiGateway\",\"Count\",\"ApiId\",\"7r82euqtv8\"]]}},{\"type\":\"metric\",\"width\":6,\"height\":3,\"x\":18,\"y\":0,\"properties\":{\"view\":\"singleValue\",\"title\":\"Latency\",\"region\":\"",
+                          {
+                            "Ref": "AWS::Region"
+                          },
+                          "\",\"metrics\":[[\"AWS/ApiGateway\",\"Latency\",\"ApiId\",\"7r82euqtv8\"]]}},{\"type\":\"metric\",\"width\":6,\"height\":3,\"x\":0,\"y\":3,\"properties\":{\"view\":\"singleValue\",\"title\":\"Integration Latency\",\"region\":\"",
+                          {
+                            "Ref": "AWS::Region"
+                          },
+                          "\",\"metrics\":[[\"AWS/ApiGateway\",\"IntegrationLatency\",\"ApiId\",\"7r82euqtv8\"]]}},{\"type\":\"metric\",\"width\":6,\"height\":3,\"x\":6,\"y\":3,\"properties\":{\"view\":\"singleValue\",\"title\":\"Data Processed\",\"region\":\"",
+                          {
+                            "Ref": "AWS::Region"
+                          },
+                          "\",\"metrics\":[[\"AWS/ApiGateway\",\"DataProcessed\",\"ApiId\",\"7r82euqtv8\"]]}}]}"
+                        ]
+                      ]
+                    },
+                    "dashboardName": "sample-metrics"
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-cloudwatch.CfnDashboard",
+                  "version": "1.203.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-cloudwatch.Dashboard",
+              "version": "1.203.0"
+            }
+          },
+          "CDKMetadata": {
+            "id": "CDKMetadata",
+            "path": "CloudwatchDashboardStack/CDKMetadata",
+            "children": {
+              "Default": {
+                "id": "Default",
+                "path": "CloudwatchDashboardStack/CDKMetadata/Default",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.CfnResource",
+                  "version": "1.203.0"
+                }
+              },
+              "Condition": {
+                "id": "Condition",
+                "path": "CloudwatchDashboardStack/CDKMetadata/Condition",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.CfnCondition",
+                  "version": "1.203.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.Construct",
+              "version": "1.203.0"
+            }
+          }
+        },
+        "constructInfo": {
+          "fqn": "@aws-cdk/core.Stack",
+          "version": "1.203.0"
+        }
+      }
+    },
+    "constructInfo": {
+      "fqn": "@aws-cdk/core.App",
+      "version": "1.203.0"
+    }
+  }
+}

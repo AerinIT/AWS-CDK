@@ -1,0 +1,128 @@
+{
+  "version": "21.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "CloudwatchDashboardStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "CloudwatchDashboardStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/CloudwatchDashboardStack/SampleDashboard/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SampleDashboardEC3D1A23",
+            "trace": [
+              "new Dashboard (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/@aws-cdk/aws-cloudwatch/lib/dashboard.ts:110:23)",
+              "new CloudwatchDashboardStack (/home/sairaj/Desktop/cloudwatch-dashboard/lib/cloudwatch-dashboard-stack.ts:8:23)",
+              "Object.<anonymous> (/home/sairaj/Desktop/cloudwatch-dashboard/bin/cloudwatch-dashboard.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1504:14)",
+              "Module.m._compile (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1588:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1282:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1098:12)",
+              "TracingChannel.traceSync (node:diagnostics_channel:315:14)",
+              "wrapModuleLoad (node:internal/modules/cjs/loader:215:24)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:158:5)",
+              "phase4 (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1504:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1588:10)",
+              "Module.load (node:internal/modules/cjs/loader:1282:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1098:12)",
+              "TracingChannel.traceSync (node:diagnostics_channel:315:14)",
+              "wrapModuleLoad (node:internal/modules/cjs/loader:215:24)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:158:5)",
+              "node:internal/main/run_main_module:30:49"
+            ]
+          }
+        ],
+        "/CloudwatchDashboardStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "Object.<anonymous> (/home/sairaj/Desktop/cloudwatch-dashboard/bin/cloudwatch-dashboard.ts:7:5)",
+              "Module._compile (node:internal/modules/cjs/loader:1504:14)",
+              "Module.m._compile (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1588:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1282:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1098:12)",
+              "TracingChannel.traceSync (node:diagnostics_channel:315:14)",
+              "wrapModuleLoad (node:internal/modules/cjs/loader:215:24)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:158:5)",
+              "phase4 (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1504:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1588:10)",
+              "Module.load (node:internal/modules/cjs/loader:1282:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1098:12)",
+              "TracingChannel.traceSync (node:diagnostics_channel:315:14)",
+              "wrapModuleLoad (node:internal/modules/cjs/loader:215:24)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:158:5)",
+              "node:internal/main/run_main_module:30:49"
+            ]
+          }
+        ],
+        "/CloudwatchDashboardStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "Object.<anonymous> (/home/sairaj/Desktop/cloudwatch-dashboard/bin/cloudwatch-dashboard.ts:7:5)",
+              "Module._compile (node:internal/modules/cjs/loader:1504:14)",
+              "Module.m._compile (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1588:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1282:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1098:12)",
+              "TracingChannel.traceSync (node:diagnostics_channel:315:14)",
+              "wrapModuleLoad (node:internal/modules/cjs/loader:215:24)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:158:5)",
+              "phase4 (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/home/sairaj/Desktop/cloudwatch-dashboard/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1504:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1588:10)",
+              "Module.load (node:internal/modules/cjs/loader:1282:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1098:12)",
+              "TracingChannel.traceSync (node:diagnostics_channel:315:14)",
+              "wrapModuleLoad (node:internal/modules/cjs/loader:215:24)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:158:5)",
+              "node:internal/main/run_main_module:30:49"
+            ]
+          }
+        ]
+      },
+      "displayName": "CloudwatchDashboardStack"
+    }
+  }
+}
